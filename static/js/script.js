@@ -14,12 +14,9 @@ window.onscroll = function() {
 
 /* Show and hide popup window */
 window.onload = function() {
-	$("#overlay").show();
-	$("#overlay").appendTo(document.body);
 	$("#popup").show();
 	$("#close-button").click(function() {
 		$("#popup").hide();
-		$("#overlay").appendTo(document.body).remove();
 		return false;
 	});
 };
