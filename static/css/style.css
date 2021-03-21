@@ -79,6 +79,43 @@ h6 {
   margin: 0px;
 }
 
+.menu .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .menu a {display: none;}
+  .menu button {display: none;}
+  .menu a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .menu.responsive {position: relative;}
+  .menu.responsive a.icon {
+    position: absolute;
+    right: 33px;
+    top: 0px;
+  }
+  .menu.responsive a {
+    display: block;
+  }
+  .menu.responsive button {
+    float: right;
+    display: block;
+  }
+}
+
+.applink {
+  height: 100vh;
+  width: auto;
+  background-image: url("../images/applink-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .header {
   height: auto;
   width: auto;
@@ -118,6 +155,28 @@ h6 {
 
 .button:hover {
   background-color: #333333;
+  text-decoration: underline;
+  font-weight: 300;
+  transition: 0.3s ease;
+}
+
+.button-secondary {
+  background-color: #ffffff;
+  border: none;
+  color: #666666;
+  padding: 9px 18px;
+  text-align: center;
+  text-decoration: underline;
+  display: inline-block;
+  font-size: 18px;
+  font-family: "open sans";
+  font-weight: 300;
+  border-radius: 24px;
+}
+
+.button-secondary:hover {
+  background-color: #ffffff;
+  color: #bfbfbf;
   text-decoration: underline;
   font-weight: 300;
   transition: 0.3s ease;
