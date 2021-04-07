@@ -8,11 +8,12 @@
 
     <link rel="stylesheet" type="text/css" href="static/css/style.css">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!--     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">-->
 
     <title>Re:treat</title>
   </head>
-  <body>
+  <body scroll="no" style="overflow: hidden">
     <!-- popup window -->
     <!-- <div id="overlay"></div> -->
     <div id="popup">
@@ -33,154 +34,50 @@
         </div>
     </div>
 
-  	<!-- header -->
-    <div class="container-fluid header" style="padding-top: 96px;">
+  	<!-- app link -->
+    <div class="container-fluid applink" style="padding-top: 96px;">
     	<div id="nav-bar" class="row navbar" style="padding: 18px 0px 9px 0px;">
-    		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-    			<h1 class="text-left" style="font-size: 32px; font-weight: 500; padding-left: 18px">
-    				<a href="https://re-treat.github.io/">Re:treat</a>
-    			</h1>
-    		</div>
-    		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-    			<h1 class="text-right" style="font-size: 18px; font-weight: 200; padding-right: 18px">
-    				<a href="https://re-treat.github.io/" style="padding-right: 24px;">Home</a>
-    				<a href="./team.html" style="padding-right: 24px;">Our team</a>
-    				<button type="button" class="button" onclick="location.href='./app.html'">Try Re:treat &#127807;</button>
-    			</h1>
-    		</div>
-    	</div>
-    	<div class="row" style="padding-top: 100px">
-    		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-    			<p class="text-center open-sans-font" style="font-size: 18px; color: white; font-weight: 200;">Self-care could be quick, easy, and instant</p>
-    		</div>
-    	</div>
-    	<div class="row" style="padding-top: 12px">
-    		<div class="col-lg-12">
-    			<h1 class="text-center">Take care of your slightest emotions</h1>
-    		</div>
-    	</div>
-    	<div class="row" style="padding: 24px 0px 200px 0px">
-    		<div class="col-lg-12">
-    			<button type="button" id="button-center" onclick="location.href='./app.html'" class="button">Try Re:treat &#127807;</button>
-    		</div>
-    	</div>	
-    </div>
-
-    <!-- intro -->
-    <div class="container" style="padding: 0px 0px 100px 0px;">
-    	<div class="row" style="padding-top: 100px;">
-    		<div class="col-sm-1"></div>
-            <div class="col-lg-10">
-    			<h2 class="text-center">We help you select apt mental health exercises</h2>
-    		</div>
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                <h1 class="text-left" style="font-size: 32px; font-weight: 500; padding-left: 18px">
+                    <a href="https://re-treat.github.io/">Re:treat</a>
+                </h1>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 menu" id="myTopnav">
+                <h1 class="text-right" style="font-size: 18px; font-weight: 200; padding-right: 18px">
+                    <a href="https://re-treat.github.io/" style="padding-right: 24px;">Home</a>
+                    <a href="./about.html" style="padding-right: 24px;">About</a>
+                    <a href="./team.html" style="padding-right: 24px;">Our team</a>
+                    <button type="button" class="button" onclick="location.href='./app.html'">Try Re:treat Moodboard &#127807;</button>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </h1>
+            </div>
+        </div>
+        <div class="row" style="padding-top: 0px;">
             <div class="col-sm-1"></div>
-    	</div>
-    	<div class="row">
+            <div class="col-sm-3 my-auto">
+                <h2>Space to share your mood anonymously</h2>
+                <h5 style="padding-bottom: 25px; color: #666666">Re:treat Moodboard helps you to find the community that shares the same mood with you, and you can read stories on campus shared by your peers.</h5>
+                <button type="button" id="button" onclick="location.href='./app.html'" class="button">Open Moodboard &#127807;</button>
+                <button type="button" id="button-secondary" onclick="location.href='./app.html'">Try out Self-care Exercise</button>
+            </div>
+            <div class="col-sm-7">
+                <img class="home-img" onclick="location.href='./app.html'" src="static/images/moodboard.png" style="width: 900px; max-width: 90vw; margin: 0px 0px;"></img>
+            </div>
             <div class="col-sm-1"></div>
-    		<div class="col-lg-10">
-    			<h5 class="text-center" style="padding-top: 24px">Assuage your emotional distress instantly by labeling your short-term daily hassles. We will generate your personalized 5-to-10-minute self-care mental exercises and connect you to the community anonymously.</h5>
-    		</div>
-            <div class="col-sm-1"></div>
-    	</div>
+        </div>
     </div>
-
-    <!-- block 1 -->
-    <div class="container-fluid" style="padding: 0px 0px 50px 0px; background-color: #f7f7f7;">
-    	<div class="row" style="padding-top: 50px;">
-    		<div class="col-sm-2"></div>
-    		<div class="col-sm-4">
-    			<img class="home-img" src="static/images/home-1.png" style="height: 400px; margin: 0px 0px;"></img>
-    		</div>
-    		<div class="col-sm-4 my-auto">
-    			<h2 class="text-center" style="padding: 0px 50px 0px 50px">Why care about mental health</h2>
-    			<h5 class="text-center">Self-care has become a buzzword as people’s awareness of mental health grows. More than 60 percent of college students said they had experienced “overwhelming anxiety,” and over 40 percent said they felt so depressed that they had difficulty functioning.</h5>
-    		</div>
-    		<div class="col-sm-2"></div>
-    	</div>
-    </div>
-
-    <!-- block 2 -->
-    <div class="container-fluid" style="padding: 0px 0px 50px 0px;">
-    	<div class="row" style="padding-top: 50px;">
-    		<div class="col-sm-2"></div>
-    		<div class="col-sm-4 my-auto">
-    			<h2 class="text-center">The challenge</h2>
-    			<h5 class="text-center">The increase in attention of day-to-day mental health has given rise to a boom of meditation apps, online counseling, and even wellness-themed youtube channels. Yet the amount of options is overwhelming and obstructive to self-care.</h5>
-    		</div>
-    		<div class="col-sm-4">
-    			<img class="home-img" src="static/images/home-2.png" style="height: 400px; margin: 0px 0px;"></img>
-    		</div>
-
-    		<div class="col-sm-2"></div>
-    	</div>
-    </div>
-
-    <!-- block 3 -->
-    <div class="container-fluid" style="padding: 0px 0px 50px 0px; background-color: #f7f7f7;">
-    	<div class="row" style="padding-top: 50px;">
-    		<div class="col-sm-2"></div>
-    		<div class="col-sm-4">
-    			<img class="home-img" src="static/images/home-3.png" style="height: 400px; margin: 0px 0px;"></img>
-    		</div>
-    		<div class="col-sm-4 my-auto">
-    			<h2 class="text-center">Why Re:treat</h2>
-    			<h5 class="text-center">Re:treat not only saves your time and energy for finding a suitable mental exercise, but also validates the exercise with research evidence and introduces you to the community.</h5>
-    		</div>
-    		<div class="col-sm-2"></div>
-    	</div>
-    </div>
-
-    <!-- solution -->
-    <div class="container" style="padding: 0px 0px 50px 0px;">
-    	<div class="row" style="padding-top: 50px;">
-    		<div class="col-lg-12">
-    			<h2 class="text-center" style="padding-bottom: 24px;">Our Solution</h2>
-    		</div>
-    	</div>
-    	<div class="row">
-    		<div class="col-sm-4">
-    			<img class="feature-img" src="static/images/feature-1.png" style="height: 250px;"></img>
-    			<h4 class="text-center" style="padding: 24px 0px 24px 0px;">Instant</h4>
-    			<h5 class="text-center">Labeling your emotional distress easily with only a few self-introspective questions, Re:treat helps you to diagnose your daily mental hassles promptly at your fingertip.</h5>
-    		</div>
-    		<div class="col-sm-4">
-    			<img class="feature-img" src="static/images/feature-2.png" style="height: 250px;"></img>
-    			<h4 class="text-center" style="padding: 24px 0px 24px 0px;">Personalized</h4>
-    			<h5 class="text-center">Based on your emotion, Re:treat saves your time searching and comparing the best suitable mental exercises and sifts out the relevant ones that would help you the most.</h5>
-    		</div>
-    		<div class="col-sm-4">
-    			<img class="feature-img" src="static/images/feature-3.png" style="height: 250px;"></img>
-    			<h4 class="text-center" style="padding: 24px 0px 24px 0px;">Effective</h4>
-    			<h5 class="text-center">Backed by psychology and mental health research, Re:treat's short yet refined exercise recommendations are effective and will help you to acquire a healthier mental state.</h5>
-    		</div>
-    	</div>
-    </div>
-
-    <!-- email -->
-    <!--
-    <div class="container-fluid" style="padding: 0px 0px 50px 0px; background-color: #f7f7f7;">
-    	<div class="row" style="padding-top: 50px;">
-    		<div class="col-lg-12">
-    			<h2 class="text-center" style="font-weight: 400;">Stay updated with us</h2>
-    			<h5 class="text-center" style="padding: 12px 0px 12px 0px;">Sign up with your email address to receive news and updates.</h5>
-    			<form action="/email-list.php" method="get" class="text-center">
-    				<input type="text" id="email" name="email" placeholder="Email Address">
-    				<input type="submit" value="Sign Up" class="button">
-    			</form>
-    		</div>
-    	</div>
-    </div>
-    !-->
 
     <!-- footer -->
-    <div class="container-fluid" style="padding: 0px 0px 24px 0px; background-color: #333333;">
+<!--     <div class="container-fluid" style="padding: 0px 0px 24px 0px; background-color: #333333;">
     	<div class="row" style="padding-top: 36px;">
     		<div class="col-lg-12">
-    			<h5 class="text-center" style="color: white;">Contact us at <a href="mailto: retreaet2020.official@gmail.com">retreat2020.official@gmail.com</a> | All Rights Researved</h5>
+    			<h5 class="text-center" style="color: white;">Contact us at <a href="mailto: hello@re-treat.app">hello@re-treat.app</a> | All Rights Researved</h5>
     			<h5 class="text-center" style="color: white;">Made with &#128155; and &#128171;</h5>
     		</div>
     	</div>
-    </div>
+    </div> -->
 
     <!-- Email subscription -->
     <script src="static/js/subscribe.js"></script>
