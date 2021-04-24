@@ -14564,7 +14564,7 @@ var $async$Ep=P.a7(function(b,c){if(b===1)return P.a8(c,r)
 while(true)switch(s){case 0:p=t.X
 o=P.J(["Content-Type","application/json; charset=UTF-8"],p,p)
 s=3
-return P.ad(G.ve("https://cddo2021.jackli.org/getLabels",C.ab.lb(P.J(["question",a],p,p),null),o),$async$Ep)
+return P.ad(G.ve("https://re-treat.uc.r.appspot.com/getLabels",C.ab.lb(P.J(["question",a],p,p),null),o),$async$Ep)
 case 3:n=c
 if(n.b===200){q=J.pK(C.ab.mp(0,B.pE(U.px(n.e).c.a.i(0,"charset")).cC(0,n.x),null),p)
 s=1
@@ -14577,7 +14577,7 @@ var $async$amt=P.a7(function(e,f){if(e===1)return P.a8(f,r)
 while(true)switch(s){case 0:p=t.X
 o=P.J(["Content-Type","application/json; charset=UTF-8"],p,p)
 s=3
-return P.ad(G.ve("https://cddo2021.jackli.org/matchExercise",C.ab.lb(P.J(["labels_q1",a,"labels_q2",b,"labels_q3",c,"size",d],p,t.c),null),o),$async$amt)
+return P.ad(G.ve("https://re-treat.uc.r.appspot.com/matchExercise",C.ab.lb(P.J(["labels_q1",a,"labels_q2",b,"labels_q3",c,"size",d],p,t.c),null),o),$async$amt)
 case 3:n=f
 if(n.b===200){q=J.pK(C.ab.mp(0,B.pE(U.px(n.e).c.a.i(0,"charset")).cC(0,n.x),null),p)
 s=1
@@ -14590,7 +14590,7 @@ var $async$V2=P.a7(function(b,c){if(b===1)return P.a8(c,r)
 while(true)switch(s){case 0:f=t.X
 e=P.J(["Content-Type","application/json; charset=UTF-8"],f,f)
 s=3
-return P.ad(G.ve("https://cddo2021.jackli.org/getExercise",C.ab.lb(P.J(["id",a],f,f),null),e),$async$V2)
+return P.ad(G.ve("https://re-treat.uc.r.appspot.com/getExercise",C.ab.lb(P.J(["id",a],f,f),null),e),$async$V2)
 case 3:d=c
 if(d.b===200){p=C.ab.mp(0,B.pE(U.px(d.e).c.a.i(0,"charset")).cC(0,d.x),null)
 f=J.as(p)
@@ -14631,7 +14631,7 @@ while(true)switch(s){case 0:P.dY(c)
 p=t.X
 o=P.J(["Content-Type","application/json; charset=UTF-8"],p,p)
 s=3
-return P.ad(G.ve("https://cddo2021.jackli.org/story/create/",C.ab.lb(P.J(["body",a,"author",b,"emotion",c,"timestamp",Date.now()],p,t.c),null),o),$async$alG)
+return P.ad(G.ve("https://re-treat.uc.r.appspot.com/story/create/",C.ab.lb(P.J(["body",a,"author",b,"emotion",c,"timestamp",Date.now()],p,t.c),null),o),$async$alG)
 case 3:n=e
 p=n.b
 P.dY(p)
@@ -14647,7 +14647,7 @@ V4:function(a){var s=0,r=P.ab(t.sd),q,p,o,n,m,l,k
 var $async$V4=P.a7(function(b,c){if(b===1)return P.a8(c,r)
 while(true)switch(s){case 0:l=t.X
 s=3
-return P.ad(G.axR(C.c.N("https://cddo2021.jackli.org/story/query/?emotion=",a),P.J(["Content-Type","application/json; charset=UTF-8"],l,l)),$async$V4)
+return P.ad(G.axR(C.c.N("https://re-treat.uc.r.appspot.com/story/query/?emotion=",a),P.J(["Content-Type","application/json; charset=UTF-8"],l,l)),$async$V4)
 case 3:k=c
 if(k.b===200){p=J.aH(C.ab.mp(0,B.pE(U.px(k.e).c.a.i(0,"charset")).cC(0,k.x),null),"result")
 l=J.as(p)
@@ -14666,7 +14666,7 @@ var $async$alW=P.a7(function(b,c){if(b===1)return P.a8(c,r)
 while(true)switch(s){case 0:o=t.X
 n=P.J(["Content-Type","application/json; charset=UTF-8"],o,o)
 s=3
-return P.ad(G.ve("https://cddo2021.jackli.org/username/get",C.ab.lb(P.J(["count",a],o,t.Em),null),n),$async$alW)
+return P.ad(G.ve("https://re-treat.uc.r.appspot.com/username/get",C.ab.lb(P.J(["count",a],o,t.Em),null),n),$async$alW)
 case 3:m=c
 if(m.b===200){p=C.ab.mp(0,B.pE(U.px(m.e).c.a.i(0,"charset")).cC(0,m.x),null)
 P.dY(p)
@@ -14681,7 +14681,7 @@ var $async$vc=P.a7(function(c,d){if(c===1)return P.a8(d,r)
 while(true)switch(s){case 0:p=t.X
 o=P.J(["Content-Type","application/json; charset=UTF-8"],p,p)
 s=3
-return P.ad(G.ve("https://cddo2021.jackli.org/log/",C.ab.lb(P.J(["pageName",a,"data",b],p,t.c),null),o),$async$vc)
+return P.ad(G.ve("https://re-treat.uc.r.appspot.com/log/",C.ab.lb(P.J(["pageName",a,"data",b],p,t.c),null),o),$async$vc)
 case 3:s=1
 break
 case 1:return P.a9(q,r)}})
@@ -14691,7 +14691,7 @@ var $async$amG=P.a7(function(c,d){if(c===1)return P.a8(d,r)
 while(true)switch(s){case 0:p=t.X
 o=P.J(["Content-Type","application/json; charset=UTF-8"],p,p)
 s=3
-return P.ad(G.ve("https://cddo2021.jackli.org/story/response/",C.ab.lb(P.J(["storyId",a,"response",b],p,p),null),o),$async$amG)
+return P.ad(G.ve("https://re-treat.uc.r.appspot.com/story/response/",C.ab.lb(P.J(["storyId",a,"response",b],p,p),null),o),$async$amG)
 case 3:n=d
 m=t.TN.a(J.aH(J.aH(C.ab.mp(0,B.pE(U.px(n.e).c.a.i(0,"charset")).cC(0,n.x),null),"data"),"responses"))
 p=m==null?null:J.iW(m,new B.amH(),p)
