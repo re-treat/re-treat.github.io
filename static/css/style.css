@@ -272,6 +272,25 @@ h6 {
   margin-right: auto;
 }
 
+#team-bio-anna, #team-bio-jack, 
+#team-bio-helen, #team-bio-emma, 
+#team-bio-name {
+  transition: opacity 0.5s ease;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+#team-anna:hover ~ #team-bio-anna, 
+#team-jack:hover ~ #team-bio-jack, 
+#team-helen:hover ~ #team-bio-helen, 
+#team-emma:hover ~ #team-bio-emma, 
+#team-name:hover ~ #team-bio-name {
+  transition: opacity 0.5s ease;
+  opacity: 1;
+  height: auto;
+}
+
 .feature-img {
   display: block;
   margin-left: auto;
