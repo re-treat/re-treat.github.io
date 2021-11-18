@@ -7,16 +7,15 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <link rel="stylesheet" type="text/css" href="static/css/style.css">
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans">
+<!--     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans"> -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<!--     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">-->
 
-    <title>Re:treat</title>
+    <title>Echo | Your Therapy Chatbot</title>
   </head>
-  <body scroll="no" style="overflow: hidden">
+  <body>
     <!-- popup window -->
-    <!-- <div id="overlay"></div> -->
-    <div id="popup">
+    <!-- <div id="popup">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <h2 class="text-center" style="font-weight: 400;">Stay updated with us</h2>
             <h6 class="text-center" style="padding: 12px 0px 12px 0px;">Sign up with your email address to receive news and updates.</h6>
@@ -32,53 +31,275 @@
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 close" style="padding-top: 24px">
             <a id="close-button" href="" class="text-center" style="color: #333333; ">Close</a>
         </div>
-    </div>
+    </div> -->
 
-  	<!-- app link -->
-    <div class="container-fluid applink" style="padding-top: 96px;">
+  	<!-- header -->
+    <div class="container-fluid header" style="padding-top: 96px;">
     	<div id="nav-bar" class="row navbar" style="padding: 18px 0px 9px 0px;">
             <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                <h1 class="text-left" style="font-size: 32px; font-weight: 500; padding-left: 18px">
-                    <a href="https://re-treat.github.io/">Re:treat</a>
+                <h1 class="text-left" style="font-size: 32px; font-weight: 700; padding-left: 18px">
+                    <a href="https://re-treat.github.io/">Echo</a>
                 </h1>
             </div>
             <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 menu" id="myTopnav">
-                <h1 class="text-right" style="font-size: 18px; font-weight: 200; padding-right: 18px">
+                <h1 class="text-right" style="font-size: 18px; font-weight: 400; padding-right: 18px">
                     <a href="https://re-treat.github.io/" style="padding-right: 24px;">Home</a>
-                    <a href="./about.html" style="padding-right: 24px;">About</a>
-                    <a href="./team.html" style="padding-right: 24px;">Our team</a>
-                    <a href="./apply.html" style="padding-right: 24px; font-weight: 500;">Apply</a>
-                    <button type="button" class="button" onclick="location.href='./app.html'">Try Re:treat Moodboard &#127807;</button>
+                    <!-- ./about.html -->
+                    <a href="" class="isDisabled" style="padding-right: 24px;">About</a>
+                    <button type="button" class="button" onclick="location.href='https://forms.gle/65SQrq2adJazHXaV8'">Join Waitlist &#129302;</button>
                     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                         <i class="fa fa-bars"></i>
                     </a>
                 </h1>
             </div>
         </div>
-        <div class="row" style="padding-top: 0px;">
-            <div class="col-sm-1"></div>
-            <div class="col-sm-3 my-auto">
-                <h2>Space to share your mood anonymously</h2>
-                <h5 style="padding-bottom: 25px; color: #666666">Re:treat Moodboard helps you to find the community that shares the same mood with you, and you can read stories on campus shared by your peers.</h5>
-                <button type="button" id="button" onclick="location.href='./app.html'" class="button">Open Moodboard &#127807;</button>
-                <button type="button" id="button-secondary" onclick="location.href='./app.html'">Try out Self-care Exercise</button>
+    	
+    	<div class="row">
+            <div class="col-lg-1"></div>
+    		<div class="col-lg-5 col-sm-12" style="padding-top: 25vh;">
+    			<h1 class="text-center">Meet Your Therapy Chatbot Echo!</h1>
+                <p class="text-center" style="font-size: 18px; font-weight: 400;">Echo is always here to listen</p>
+                <button type="button" id="button-center" onclick="location.href='https://forms.gle/65SQrq2adJazHXaV8'" class="button">Join Waitlist &#129302;</button>
             </div>
-            <div class="col-sm-7">
-                <img class="home-img" onclick="location.href='./app.html'" src="static/images/moodboard.png" style="width: 900px; max-width: 90vw; margin: 0px 0px;"></img>
+            <div class="col-lg-5 col-sm-12" style="padding-top: 20vh;">
+                <img class="home-img" src="static/images/header_pic.png" style="width: 100%;"></img>
             </div>
-            <div class="col-sm-1"></div>
+            <div class="col-lg-1"></div>
+    	</div>
+    </div>
+
+    <!-- keywords -->
+    <div class="container" style="padding: 0px 0px 100px 0px;">
+        <div class="row" style="padding-top: 100px;">
+            <div class="col-lg-6">
+                <h3 class="text-center" style="font-weight: 500;">The only web chatbot tackling college students mental health issues</h3>
+            </div>
+            <div class="col-lg-2">
+                <h6 class="text-center keyword-o">Anonymous</h6>
+            </div>
+            <div class="col-lg-2">
+                <h6 class="text-center keyword-g">Personalized</h6>
+            </div>
+            <div class="col-lg-2">
+                <h6 class="text-center keyword-y">Instant</h6>
+            </div>
         </div>
     </div>
 
-    <!-- footer -->
-<!--     <div class="container-fluid" style="padding: 0px 0px 24px 0px; background-color: #333333;">
-    	<div class="row" style="padding-top: 36px;">
+    <!-- how it works -->
+    <div class="container-fluid" style="padding: 0px 0px 100px 0px; background-color: rgba(247, 238, 229, .4);">
+        <div class="row" style="padding-top: 100px;">
+            <div class="col-sm-1"></div>
+            <div class="col-lg-10">
+                <h2 class="text-center">When To Use?</h2>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-3" style="padding-top: 20px;">
+                <h6 class="text-center card" style="box-shadow: 0px 0px 10px #e78823;">Have an upcoming very difficult exam or interview? Feeling extremely anxious and unconfident about yourself?</h6>
+            </div>
+            <div class="col-lg-4" style="padding-top: 20px;">
+                <h6 class="text-center card" style="box-shadow: 0px 0px 10px #7fb069;">So stressful that can't focus and cannot stop procrastinating but there are SOOOOO many works left to do! How to be productive and get things done?</h6>
+            </div>
+            <div class="col-lg-3" style="padding-top: 20px;">
+                <h6 class="text-center card" style="box-shadow: 0px 0px 10px #fff785;">Feeling lonely and homesick? Missing old friends but don't know how to formulate strong new relationships or get along with yourself?</h6>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-8">
+                <h3 class="text-center" style="padding-top: 40px; font-weight: 500;">Don't Worry! Anxiety and depression are the 2 biggest issues college students are facing. You are never alone. Echo is always HERE to listen and to help!</h3>
+            </div>
+            <div class="col-lg-2"></div>
+        </div>
+    </div>
+
+    <!-- track -->
+    <div class="container-fluid" style="padding: 0px 0px 100px 0px;">
+    	<div class="row" style="padding-top: 100px;">
+    		<div class="col-sm-1"></div>
+    		<div class="col-sm-6">
+    			<img class="home-img" src="static/images/mood_tracker.png" style="width: 100%; margin: 0px 0px; border-radius: 20px; box-shadow: 0px 2px 10px #999999;"></img>
+    		</div>
+    		<div class="col-sm-4 my-auto">
+    			<h2 class="text-center" style="padding: 0px 50px 0px 50px; color: #e78823;">Do check-ins to understand your emotions and track your mood</h2>
+    		</div>
+    		<div class="col-sm-1"></div>
+    	</div>
+    </div>
+
+    <!-- share -->
+    <div class="container-fluid" style="padding: 0px 0px 100px 0px; background-color: rgba(247, 238, 229, .4);">
+    	<div class="row" style="padding-top: 100px;">
+    		<div class="col-sm-1"></div>
+    		<div class="col-sm-4 my-auto">
+    			<h2 class="text-center" style="color: #7fb069;">Share anything on your mind and receive Echo's support</h2>
+    		</div>
+    		<div class="col-sm-6">
+    			<img class="home-img" src="static/images/share.png" style="width: 100%; margin: 0px 0px; border-radius: 20px; box-shadow: 0px 2px 10px #999999;"></img>
+    		</div>
+
+    		<div class="col-sm-1"></div>
+    	</div>
+    </div>
+
+    <!-- interactive -->
+    <div class="container-fluid" style="padding: 0px 0px 100px 0px;">
+    	<div class="row" style="padding-top: 100px;">
+    		<div class="col-sm-1"></div>
+    		<div class="col-sm-6">
+    			<img class="home-img" src="static/images/interactive.png" style="width: 100%; margin: 0px 0px; border-radius: 20px; box-shadow: 0px 2px 10px #999999;"></img>
+    		</div>
+    		<div class="col-sm-4 my-auto">
+    			<h2 class="text-center" style="color: #e78823;">Work on a specific problem in an interactive and fun way</h2>
+    		</div>
+    		<div class="col-sm-1"></div>
+    	</div>
+    </div>
+
+    <!-- what special -->
+    <div class="container-fluid" style="padding: 0px 0px 100px 0px; background-color: rgba(247, 238, 229, .4);">
+        <div class="row" style="padding-top: 100px;">
+            <div class="col-sm-1"></div>
+            <div class="col-lg-10">
+                <h2 class="text-center">What Makes Echo Special?</h2>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-3" style="padding-top: 20px;">
+                <img class="feature-img" src="static/images/university.png" style="height: 84px;"></img>
+                <h4 class="text-center" style="padding: 24px 0px 24px 0px; color: #7fb069; font-weight: 600;">Targeting college student</h4>
+            </div>
+            <div class="col-lg-4" style="padding-top: 20px;">
+                <img class="feature-img" src="static/images/stethoscope.png" style="height: 84px;"></img>
+                <h4 class="text-center" style="padding: 24px 0px 24px 0px; color: #7fb069; font-weight: 600;">Effective & Efficient</h4>
+            </div>
+            <div class="col-lg-3" style="padding-top: 20px;">
+                <img class="feature-img" src="static/images/slide.png" style="height: 84px;"></img>
+                <h4 class="text-center" style="padding: 24px 0px 24px 0px; color: #7fb069; font-weight: 600;">Free & Fun</h4>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-3">
+                <div class="card" style="min-height: 100px; box-shadow: 0px 0px 10px #7fb069;">
+                    <h6 style=" font-weight: 400;">No chatbot in the market targets college students. We are here to fill the gap! Echo is trained to specifically understand college students' woes</h6>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card" style="min-height: 100px; box-shadow: 0px 0px 10px #7fb069;">
+                    <h6 style=" font-weight: 400;">Effective: Theories supporting our exercises are research-based Psychotherapy, Cognitive Behavioral Therapy (CBT), and Buddhist Philosophy.</h6>
+                </div>
+                <div class="card" style="min-height: 100px; box-shadow: 0px 0px 10px #7fb069; margin-top: 20px;">
+                    <h6 style=" font-weight: 400;">Efficient: No need to wait in the long queue for weeks. Start a quick conversation with Echo at any time and anywhere</h6>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="card" style="min-height: 100px; box-shadow: 0px 0px 10px #7fb069;">
+                    <h6 style=" font-weight: 400;">Free: Echo is developed by students and FOR Students. Unlike other competitors charging $30+ per month, we are completely FREE!</h6>
+                </div>
+                <div class="card" style="min-height: 100px; box-shadow: 0px 0px 10px #7fb069; margin-top: 20px;">
+                    <h6 style=" font-weight: 400;">Fun: Listening to lectures is BORING, we want your self-care process simple and fun! Explore Monia to experience the creative and interactive chats!</h6>
+                </div>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+    </div>
+
+    <!-- coming soon -->
+    <div class="container-fluid" style="padding: 0px 0px 100px 0px;">
+        <div class="row" style="padding-top: 100px;">
+            <div class="col-sm-1"></div>
+            <div class="col-lg-10">
+                <h2 class="text-center">More Features Coming Soon</h2>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-3" style="padding-top: 20px;">
+                <img class="feature-img" src="static/images/letter.png" style="height: 84px;"></img>
+                <h4 class="text-center" style="padding: 24px 0px 24px 0px; color: #e78823; font-weight: 600;">Send a letter to our peer advisor</h4>
+            </div>
+            <div class="col-lg-4" style="padding-top: 20px;">
+                <img class="feature-img" src="static/images/book.png" style="height: 84px;"></img>
+                <h4 class="text-center" style="padding: 24px 0px 24px 0px; color: #e78823; font-weight: 600;">My Reflective Journal</h4>
+            </div>
+            <div class="col-lg-3" style="padding-top: 20px;">
+                <img class="feature-img" src="static/images/message.png" style="height: 84px;"></img>
+                <h4 class="text-center" style="padding: 24px 0px 24px 0px; color: #e78823; font-weight: 600;">The Community</h4>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-3">
+                <div class="card" style="box-shadow: 0px 0px 10px #e78823;">
+                    <h6 style=" font-weight: 400;">Want to receive more support beyond talking to Echo? Send a letter to our well-trained peer counselors and receive your personalized reply in a week!</h6>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card" style="box-shadow: 0px 0px 10px #e78823;">
+                    <h6 style=" font-weight: 400;">Want to have a written record to track your thoughts? Echo will auto general your personalized journal after each talk with her</h6>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="card" style="box-shadow: 0px 0px 10px #e78823;">
+                    <h6 style=" font-weight: 400;">Feeling lonely and want to connect with peers who are going through similar stuff? Check out our mood board to support and encourage each other</h6>
+                </div>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+    </div>
+
+    <!-- logo wall -->
+    <div class="container-fluid" style="padding: 0px 0px 100px 0px; background-color: rgba(247, 238, 229, .4);">
+        <div class="row" style="padding-top: 100px;">
+            <h2 class="col-lg-12 text-center">Featured In</h2>
+            <div class="col-lg-2"></div>
+            <div class="col-lg-4 my-auto" style="padding-top: 20px;">
+                <img class="home-img" src="static/images/mozilla.png" style="height: 36px; margin: 0px 0px; display: block; margin: auto;"></img>
+            </div>
+            <!-- <div class="col-lg-2 my-auto" style="padding-top: 20px;">
+                <img class="home-img" src="static/images/sspc.png" style="height: 100px; margin: 0px 0px; display: block; margin: auto;"></img>
+            </div> -->
+            <div class="col-lg-4 my-auto" style="padding-top: 20px;">
+                <img class="home-img" src="static/images/skydeck.png" style="height: 36px; margin: 0px 0px; display: block; margin: auto;"></img>
+            </div>
+            <div class="col-lg-2"></div>
+        </div>
+    </div>
+
+    <!-- email -->
+    <!--
+    <div class="container-fluid" style="padding: 0px 0px 50px 0px; background-color: #f7f7f7;">
+    	<div class="row" style="padding-top: 50px;">
     		<div class="col-lg-12">
-    			<h5 class="text-center" style="color: white;">Contact us at <a href="mailto: hello@re-treat.app">hello@re-treat.app</a> | All Rights Reserved</h5>
-    			<h5 class="text-center" style="color: white;">Made with &#128155; and &#128171;</h5>
+    			<h2 class="text-center" style="font-weight: 400;">Stay updated with us</h2>
+    			<h5 class="text-center" style="padding: 12px 0px 12px 0px;">Sign up with your email address to receive news and updates.</h5>
+    			<form action="/email-list.php" method="get" class="text-center">
+    				<input type="text" id="email" name="email" placeholder="Email Address">
+    				<input type="submit" value="Sign Up" class="button">
+    			</form>
     		</div>
     	</div>
-    </div> -->
+    </div>
+    !-->
+
+    <!-- footer -->
+    <div class="container-fluid footer" style="padding: 0px 0px 24px 0px;">
+    	<div class="row" style="padding-top: 36px;">
+    		<div class="col-lg-12">
+    			<h5 class="text-center" style="color: #1d1a05; font-weight: 400;">Copyright © 2021 | All Rights Reserved</h5>
+    		</div>
+    	</div>
+    </div>
 
     <!-- Email subscription -->
     <script src="static/js/subscribe.js"></script>

@@ -2,22 +2,23 @@ body{
   max-width:100%;
   overflow-x: hidden; 
   margin: 0px;
+  font-family: "Montserrat";
 }
 
 a:link {
-  color: #ffffff;
+  color: #1d1a05;
   background-color: transparent;
   text-decoration: none;
 }
 
 a:visited {
-  color: #ffffff;
+  color: #1d1a05;
   background-color: transparent;
   text-decoration: none;
 }
 
 a:hover {
-  color: #98aeca;
+  color: #e78823;
   background-color: transparent;
 /*  text-decoration: underline;*/
   transition: 0.3s ease;
@@ -25,51 +26,58 @@ a:hover {
 }
 
 a:active {
-  color: #ffffff;
+  color: #1d1a05;
   background-color: transparent;
+  text-decoration: none;
+}
+
+.isDisabled {
+  color: currentColor;
+  cursor: not-allowed;
+  opacity: 0.5;
   text-decoration: none;
 }
 
 h1 {
   font-size: 48px;
-  color: white;
+  color: #1d1a05;
   font-weight: 900;
 }
 
 h2 {
   font-size: 36px;
-  color: #333333;
+  color: #1d1a05;
   font-weight: 600;
 }
 
 h3 {
   font-size: 24px;
-  color: #333333;
+  color: #1d1a05;
   font-weight: 400;
 }
 
 h4 {
   font-size: 30px;
-  color: #333333;
+  color: #1d1a05;
   font-weight: 400;
 }
 
 h5 {
   font-size: 18px;
-  color: #333333;
+  color: #1d1a05;
   font-weight: 300;
   line-height: 150%; 
 }
 
 h6 {
   font-size: 16px;
-  color: #333333;
+  color: #1d1a05;
   font-weight: 300;
 /*  line-height: 150%;*/ 
 }
 
 .navbar {
-  background-color: hsla(0, 0%, 20%, 0.9);
+  background-color: hsla(0, 0%, 20%, 0);
   position: fixed;
   top: 0;
   left: 0;
@@ -117,9 +125,9 @@ h6 {
 }
 
 .header {
-  height: auto;
+  min-height: 100vh;
   width: auto;
-  background-image: url("../images/martin-adams-unsplash.png");
+  background-image: url("../images/background_gradient.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -140,6 +148,14 @@ h6 {
   background-size: cover;
 }
 
+.footer {
+  min-height: 100px;
+  width: auto;
+  background-image: url("../images/background_gradient.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 #button-center {
   position: absolute;
   left: 50%;
@@ -148,7 +164,7 @@ h6 {
 }
 
 .button {
-  background-color: #98aeca;
+  background-color: #7fb069;
   border: none;
   color: white;
   padding: 9px 18px;
@@ -156,15 +172,15 @@ h6 {
   text-decoration: none;
   display: inline-block;
   font-size: 18px;
-  font-family: "open sans";
-  font-weight: 300;
+  font-family: "Montserrat";
+  font-weight: 400;
   border-radius: 24px;
 }
 
 .button:hover {
-  background-color: #333333;
+  background-color: #1d1a05;
   text-decoration: underline;
-  font-weight: 300;
+  font-weight: 400;
   transition: 0.3s ease;
   cursor: pointer;
 }
@@ -178,8 +194,8 @@ h6 {
   text-decoration: underline;
   display: inline-block;
   font-size: 18px;
-  font-family: "open sans";
-  font-weight: 300;
+  font-family: "Montserrat";
+  font-weight: 400;
   border-radius: 24px;
 }
 
@@ -187,7 +203,7 @@ h6 {
   background-color: #ffffff;
   color: #bfbfbf;
   text-decoration: underline;
-  font-weight: 300;
+  font-weight: 400;
   transition: 0.3s ease;
   cursor: pointer;
 }
@@ -206,7 +222,7 @@ h6 {
   display: inline-block;
   font-size: 18px;
   font-family: "open sans";
-  font-weight: 300;
+  font-weight: 400;
   border-radius: 24px;
 }
 
@@ -214,7 +230,7 @@ h6 {
   background-color: #ffffff;
   color: #333333;
   text-decoration: underline;
-  font-weight: 300;
+  font-weight: 400;
   transition: 0.3s ease;
   cursor: pointer;
 }
@@ -233,7 +249,7 @@ h6 {
   display: inline-block;
   font-size: 18px;
   font-family: "open sans";
-  font-weight: 300;
+  font-weight: 400;
   border-radius: 24px;
 }
 
@@ -241,7 +257,7 @@ h6 {
   background-color: #ffffff;
   color: #333333;
   text-decoration: underline;
-  font-weight: 300;
+  font-weight: 400;
   transition: 0.3s ease;
   cursor: not-allowed;
 }
@@ -359,4 +375,78 @@ h6 {
   font-weight: 300;
   text-decoration: none;
   transition: 0.3s ease;
+}
+
+.keyword-g {
+  margin: auto;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  background-color: rgba(127, 176, 105, .3);
+  width: 175px;
+  padding: 25px;
+}
+
+.keyword-g:hover {
+  margin: auto;
+  font-weight: 400;
+  text-transform: uppercase;
+  border-radius: 10px;
+  background-color: rgba(127, 176, 105, .15);
+  padding: 25px;
+}
+
+.keyword-y {
+  margin: auto;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  background-color: rgba(255, 251, 189, 1);
+  width: 175px;
+  padding: 25px;
+}
+
+.keyword-y:hover {
+  margin: auto;
+  font-weight: 400;
+  text-transform: uppercase;
+  border-radius: 10px;
+  background-color: rgba(255, 251, 189, .5);
+  padding: 25px;
+}
+
+.keyword-o {
+  margin: auto;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  background-color: rgba(231, 136, 35, .3);
+  width: 175px;
+  padding: 25px;
+}
+
+.keyword-o:hover {
+  margin: auto;
+  font-weight: 400;
+  text-transform: uppercase;
+  border-radius: 10px;
+  background-color: rgba(231, 136, 35, .15);
+  padding: 25px;
+}
+
+.card {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  border-radius: 10px;
+  border-width: 0px;
+  background-color: white;
+  width: 350px;
+  min-height: 150px;
+  padding: 20px;
 }
