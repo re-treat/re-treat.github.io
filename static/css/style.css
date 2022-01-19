@@ -143,7 +143,7 @@ h6 {
 .header-apply {
   height: auto;
   width: auto;
-  background-image: url("../images/annie-spratt-unsplash.png");
+  background-image: url("../images/background_gradient.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -209,13 +209,15 @@ h6 {
 }
 
 #button-apply {
-  position: absolute;
+  /* position: absolute;
   left: 50%;
   -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-  background-color: #98aeca;
+  transform: translateX(-50%); */
+  /* background-color: #98aeca; */
+  background-color: #7fb069;
   border: none;
   color: white;
+  margin-right: 40px;
   padding: 9px 18px;
   text-align: center;
   text-decoration: none;
@@ -236,13 +238,13 @@ h6 {
 }
 
 #button-coffee {
-  position: absolute;
+  /* position: absolute;
   left: 50%;
   -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-  background-color: #e0e7ef;
+  transform: translateX(-50%); */
+  background-color: #7fb069;
   border: none;
-  color: #666666;
+  color: white;
   padding: 9px 18px;
   text-align: center;
   text-decoration: none;
@@ -259,7 +261,7 @@ h6 {
   text-decoration: underline;
   font-weight: 400;
   transition: 0.3s ease;
-  cursor: not-allowed;
+  cursor: pointer;
 }
 
 /*.vert-center {
